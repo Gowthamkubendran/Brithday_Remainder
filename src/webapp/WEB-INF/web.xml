@@ -1,0 +1,11 @@
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="4.0">
+  <servlet>
+    <servlet-name>dbEntry</servlet-name>
+    <servlet-class>yourpackage.dbEntry</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dbEntry</servlet-name>
+    <url-pattern>/dbEntry</url-pattern>
+  </servlet-mapping>
+</web-app>
