@@ -18,9 +18,10 @@ public class dbEntry extends HttpServlet {
             java.sql.Date sqlDate = java.sql.Date.valueOf(dateStr);
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://sql7.freesqldatabase.com:3306/sql7777794";
-            String username = "sql7777794";
-            String password = "fjHaGkNKcp";
+            String url = System.getenv("DB_URL");
+            String username = System.getenv("DB_USER");
+             String password = System.getenv("DB_PASSWORD");
+
             Connection con = DriverManager.getConnection(url, username, password);
 
            
